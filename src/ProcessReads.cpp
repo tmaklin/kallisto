@@ -314,7 +314,7 @@ void MasterProcessor::processReads() {
           }
           int ec = tc.findEC(t.first);
           assert(ec != -1);
-          ++c[ec];
+	  c[ec] += t.second;
         }
       }
     } else {
